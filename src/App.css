@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body{
+  background: rgba(0,0,0,0.9);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#bg {
+  --bs-bg-opacity: 1;
+  background: rgb(207,11,31);
+background: linear-gradient(90deg, rgba(207,11,31,1) 0%, rgba(253,155,29,1) 50%, rgba(242,252,69,1) 100%);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.burger1{
+  height: 600px;
+}
+.card{
+  max-width: 200px;
+}
+main{
+  max-width: 1000px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  top:50%;
+  left: 40%;
+  transform: translate(40%,0%);
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 1000px) {
+  .burger1{
+    height: 500px;
   }
-  to {
-    transform: rotate(360deg);
+  .card{
+    max-width: 200px;
+  }
+  main{
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:50%;
+    left: 40%;
+    transform: translate(0%,0%);
+  }
+}
+@media only screen and (max-width: 700px) {
+  .burger1{
+    height: 300px;
+  }
+  .card{
+    max-width: 300px;
+  }
+  main{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top:50%;
+    left: 50%;
+    transform: translate(10%,0%);
   }
 }
